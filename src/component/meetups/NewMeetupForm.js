@@ -20,7 +20,7 @@ function NewMeetupForm(props) {
         const meetupData = {
             title: enteredTitle,
             image: enteredImage,
-            enteredAddress: enteredAddress,
+            address: enteredAddress,
             description: enteredDescription,
         };
 
@@ -36,14 +36,14 @@ function NewMeetupForm(props) {
                 </div>
                 <div className={classes.control}>
                     <label htmlFor={"image"}>Meetup Image</label>
-                    <input type={"url"} required={true} id={"image"} ref={imageInputRef}/>
+                    <input type={"url"} required={true} id={"image"} ref={imageInputRef} />
                 </div>
                 <div className={classes.control}>
                     <label htmlFor={"address"}>Meetup Address</label>
-                    <input type={"text"} required={true} id={"address"} ref={addressInputRef}/>
+                    <input type={"text"} required={true} id={"address"} ref={addressInputRef} />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor={"description"}>Meetup Address</label>
+                    <label htmlFor={"description"}>Meetup Description</label>
                     <textarea id={"description"} required={true} rows='5' ref={descriptionInputRef}></textarea>
                 </div>
                 <div className={classes.actions}>
